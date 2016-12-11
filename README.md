@@ -15,15 +15,15 @@ requirements can be to blame. And of course, code that doesn't correctly
 implement the 
 expected functionality. Of these problems, its obvious that more unit tests 
 or better unit tests that verify that the implementation actually implemented the 
-feature would prevent some bugs. And spending more time reviewing documentation 
-and discussing requirements might fix bugs caused by these sort of issues. 
+feature would prevent some bugs. Spending more time reviewing documentation 
+and discussing requirements might prevent some bugs too. 
 
 But what about configuration?
 
 Sometimes you may have some highly configurable component, or use some feature 
 that is parameterized. And even though the feature works, or is expected to 
 work based on some method contract, it doesn't! Why? Usually, its because 
-someone is using it wrong, because someone forgot to properly configure it.
+someone used it wrong, because someone forgot to properly configure it.
 
 One aspect of "configuration", at least in Java, are annotations. And 
 lately, I have found myself doing a lot of Spring Boot development. And a lot 
