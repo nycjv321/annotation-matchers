@@ -10,19 +10,20 @@ So you may be wondering, what's the point of this library?
 In my experience in both QA and Development, I've noticed that configuration 
 and not implementation is the culprit of many problems found in production. 
 Obviously, there are other things to consider when trying to better understanding how bugs
-are introduced. For example incorrect documentation and lack of proper 
+are introduced. For example, incorrect documentation and lack of proper 
 requirements can be to blame. And of course, code that doesn't correctly 
-implement the 
-expected functionality. Of these problems, its obvious that more unit tests 
-or better unit tests that verify that the implementation actually implemented the 
-feature would prevent some bugs. Spending more time reviewing documentation 
-and discussing requirements might prevent some bugs too. 
+implement the expected functionality. 
+
+Of these problems, its obvious that more/ better unit tests that verify that 
+the implementation actually implemented the feature would prevent some bugs. 
+And spending more time reviewing documentation and discussing requirements might 
+prevent some bugs too. 
 
 But what about configuration?
 
 Sometimes you may have some highly configurable component, or use some feature 
 that is parameterized. And even though the feature works, or is expected to 
-work based on some method contract, it doesn't! Why? Usually, its because 
+work based on some method contract, it doesn't! Why? Usually it's because 
 someone used it wrong, because someone forgot to properly configure it.
 
 One aspect of "configuration", at least in Java, are annotations. And 
@@ -34,8 +35,8 @@ experience with Spring, unless I do something wrong, it kinda just "works".
 So I thought instead of having to write these sort of tests why not just 
 double check that I am using Spring correctly? \<insert mind blown gif here\>
 
-This library is intended to enable lazy folks like me to just check for human 
-error and not check implementation details or frameworks that are already tested
+This library is intended to enable lazy folks like me to check for human 
+error and not check implementation details or frameworks that are already tested.
 
 ## Dependencies
 
